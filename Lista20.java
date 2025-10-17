@@ -151,10 +151,11 @@ Scanner scanner = new Scanner (System.in);
 	// 7 – Verificando situação de estoque
 	public static void estoque(int estoque) {
 		if (estoque >= 10) {
-			System.out.println("Estoque suficiente.");
-		} else if (estoque >= 5 && estoque < 10){
-			System.out.println("Estoque baixo.");
-		} else if (estoque < 5){
-			System.out.println("Estoque crítico.");
+		    System.out.println("Estoque suficiente.");
+		} else if (estoque >= 5) {
+		    System.out.println("Estoque baixo.");
+		} else {
+		    System.out.println("Estoque crítico.");
 		}
+
 	}}
